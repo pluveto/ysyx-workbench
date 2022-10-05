@@ -1,8 +1,8 @@
 all:
-	@echo "Write this Makefile by your self."
+	verilator --cc --exe --build -j 1 -Wall csrc/main.cpp vsrc/top.v
 
-sim:
+sim: all
 	$(call git_commit, "sim RTL") # DO NOT REMOVE THIS LINE!!!
-	@echo "Write this Makefile by your self."
+	./obj_dir/Vtop
 
 include ../Makefile
