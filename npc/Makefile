@@ -1,5 +1,5 @@
 all:
-	verilator --cc --exe --build -j 1 -Wall csrc/main.cpp vsrc/top.v
+	verilator --cc --exe --build --trace -j 1 -Wall csrc/main.cpp vsrc/top.v
 
 sim: all
 	$(call git_commit, "sim RTL") # DO NOT REMOVE THIS LINE!!!
