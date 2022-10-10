@@ -1,0 +1,14 @@
+build
+*.*
+*
+!*/
+!Makefile
+!*.mk
+!*.[cSh]
+!*.v
+!*.cc
+!*.cpp
+!.gitignore
+!README.md
+obj_dir
+auto_bind.cpp
